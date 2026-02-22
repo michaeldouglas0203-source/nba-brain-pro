@@ -1,0 +1,13 @@
+{
+  "name": "nba-brain-pro",
+  "version": "1.0.0",
+  "description": "Bot de trading NBA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "telegraf": "^4.15.0"
+  }
+}
