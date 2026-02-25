@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: nba-brain-pro
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: nba-eternum-db
+          property: connectionString
+      - key: ODDS_API_KEY
+        sync: false
+
+databases:
+  - name: nba-eternum-db
+    databaseName: nba_eternum
+    user: nba_eternum
