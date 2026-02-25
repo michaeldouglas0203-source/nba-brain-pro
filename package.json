@@ -1,0 +1,20 @@
+{
+  "name": "nba-brain-pro",
+  "version": "10.0.0",
+  "description": "NBA Brain Pro v10.0 Eternum - Agentes Imortais",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "telegraf": "^4.15.0",
+    "axios": "^1.6.0",
+    "pg": "^8.11.0",
+    "@tensorflow/tfjs": "^4.10.0",
+    "@tensorflow/tfjs-node": "^4.10.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
